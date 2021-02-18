@@ -4,6 +4,7 @@
 }
 
 body {
+    position: relative;
     background-color: #000;
     font-family: 'Martel Sans', sans-serif;
     font-size: 16px;
@@ -41,12 +42,25 @@ a {
     flex-flow: column;
     align-items: center;
     margin-top: 1rem;
+    padding: 75px 0;
 }
 
 .subtitle {
     display: flex;
+    text-align: center;
     justify-content: center;
     color: #fff;
+    width: 640px;
+    margin: 1rem auto;
+}
+
+.subtitle-h1 {
+    font-weight: bold;
+}
+
+.subtitle-email-text {
+    align-items: center;
+    justify-content: center;
 }
 
 .subtitle a {
@@ -58,40 +72,54 @@ h3 {
     font-size: 18px;
 }
 
-.align-form {
+form .align-form {
     display: flex;
-    flex-flow: column;
     align-items: center;
+    justify-content: center;
+}
 
+.sub-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .style-email-input {
-    flex-grow: 1;
     height: 60px;
-    box-sizing: border-box;
-    border: solid 1px #8c8c8c;
-    padding-left: 10px;
+    width: 500px;
+    padding-left: 5px;
 }
 
-.style-email-input ::placeholder :active {
+.style-email-input:focus {
+    outline-color: #0071eb;
+}
+
+.placeholder-label {
+    position: relative;
+    left: -30.8rem;
     transition: font .1s ease, top .1s ease, transform .1s ease, -webkit-transform .1s ease, -moz-transform .1s ease, -o-transform .1s ease;
-    transform: translateY(-50%);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.style-email-input:focus~.placeholder-label,
+.style-email-input:not(:placeholder-shown).style-email-input:not(:focus)~.placeholder-label {
+    top: -1rem;
 }
 
 .style-submit {
-    align-self: center;
-    justify-content: center;
+    height: 60px;
     background-color: #e50914;
     color: #fff;
     font-weight: 400;
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
     min-width: 74px;
-    height: 60px;
     margin: .25em auto;
     padding: 0 1em;
 }
 
 .style-submit:hover {
+    position: relative;
     background-color: #f40612;
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
