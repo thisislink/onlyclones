@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Homepage from './home';
 import IndeedPage from './Clones/indeed';
 
