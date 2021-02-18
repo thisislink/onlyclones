@@ -20,6 +20,11 @@ a {
     margin-top: 1rem;
 }
 
+.style-background {
+    background-color: #000;
+    color: #fff;
+}
+
 .header-title {
     color: #e50914;
     line-height: normal;
@@ -100,6 +105,7 @@ form .align-form {
     transition: font .1s ease, top .1s ease, transform .1s ease, -webkit-transform .1s ease, -moz-transform .1s ease, -o-transform .1s ease;
     background-color: transparent;
     pointer-events: none;
+    color: #000;
 }
 
 .style-email-input:focus~.placeholder-label,
@@ -114,12 +120,10 @@ form .align-form {
     font-weight: 400;
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
     min-width: 74px;
-    margin: .25em auto;
     padding: 0 1em;
 }
 
 .style-submit:hover {
-    position: relative;
     background-color: #f40612;
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
