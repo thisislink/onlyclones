@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import indeedStyles from '../Clones/indeed.module.css';
+import indeedStyles from '../IndeedClone/indeed.module.css';
+import Navigation from '../Navigation/Navigation';
 
 const IndeedClone = () => {
     useEffect(() => {
@@ -13,9 +14,15 @@ const IndeedClone = () => {
                 <div className={indeedStyles["container"]}>
                     <p className={indeedStyles["headerTitle"]}>Indeed</p>
                     <nav>
-                        <Link to="/">Home</Link>
-                        <button type="button">Sign In</button>
+                        <Link to="#">Find Jobs</Link>
+                        <Link to="#">Company Reviews</Link>
+                        <Link to="#">Find Salaries</Link>
+                        <Link to="#">Upload your resume</Link>
+                        <Link to="#">Sign in</Link>
+                        <Link to="#">Employers / Post Job</Link>
+
                     </nav>
+                    <Navigation />
                 </div>
 
                 <section>

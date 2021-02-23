@@ -51,7 +51,9 @@ a {
 }
 
 .subtitle {
+    display: flex;
     text-align: center;
+    justify-content: center;
     color: #fff;
     width: 640px;
     margin: 1rem auto;
@@ -61,15 +63,18 @@ a {
     font-weight: bold;
 }
 
+.subtitle-email-text {
+    align-items: center;
+    justify-content: center;
+}
+
 .subtitle a {
     color: #fff;
     margin-left: 4px;
 }
 
-h3.subtitle-email-text {
+h3 {
     font-size: 18px;
-    width: 640px;
-    text-align: center;
 }
 
 form .align-form {
@@ -78,8 +83,13 @@ form .align-form {
     justify-content: center;
 }
 
+.sub-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .style-email-input {
-    display: inline-block;
     height: 60px;
     width: 500px;
     padding-left: 5px;
@@ -91,7 +101,7 @@ form .align-form {
 
 .placeholder-label {
     position: relative;
-    left: -38.8rem;
+    left: -30.8rem;
     transition: font .1s ease, top .1s ease, transform .1s ease, -webkit-transform .1s ease, -moz-transform .1s ease, -o-transform .1s ease;
     background-color: transparent;
     pointer-events: none;
@@ -104,7 +114,6 @@ form .align-form {
 }
 
 .style-submit {
-    display: inline-block;
     height: 60px;
     background-color: #e50914;
     color: #fff;
