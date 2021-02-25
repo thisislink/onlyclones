@@ -4,25 +4,21 @@ import indeedStyles from '../IndeedClone/indeed.module.css';
 import Navigation from '../Navigation/Navigation';
 
 const IndeedClone = () => {
-    useEffect(() => {
-        document.body.style.backgroundColor = "#fff";
-    })
-
     return (
         <body>
             <div>
                 <div className={indeedStyles["container"]}>
                     <p className={indeedStyles["headerTitle"]}>Indeed</p>
                     <nav>
-                        <Link to="#">Find Jobs</Link>
-                        <Link to="#">Company Reviews</Link>
-                        <Link to="#">Find Salaries</Link>
-                        <Link to="#">Upload your resume</Link>
-                        <Link to="#">Sign in</Link>
-                        <Link to="#">Employers / Post Job</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Find Jobs</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Company Reviews</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Find Salaries</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Upload your resume</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Sign in</Link>
+                        <Link to="#" className={indeedStyles["styleLinks"]}>Employers / Post Job</Link>
 
                     </nav>
-                    <Navigation />
+                    <Navigation className={indeedStyles["styleLinks"]} />
                 </div>
 
                 <section>
@@ -41,7 +37,7 @@ const IndeedClone = () => {
                     <p className={indeedStyles["employers-text"]}>Employers: get started - post a job, search resumes, and more</p>
                 </section>
             </div >
-        </body>
+        </body >
     );
 }
 

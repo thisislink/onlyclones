@@ -5,10 +5,11 @@ import NavigationStyle from '../Navigation/NavStyle.module.css';
 const Navigation = () => {
     return (
         <>
-            <p className={NavigationStyle["header-title"]}>Only Clones</p>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/all-clones">Clones</Link>
+            <nav className={NavigationStyle["style-links"]}>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/all-clones">Clones</Link></li>
+                </ul>
             </nav>
         </>
     )
