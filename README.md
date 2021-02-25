@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Only Clones
+This project was created to improve and showcase my frontend skills through cloning websites. All sites can be viewed at [onlyclones.com](https://onlyclones.com).
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
