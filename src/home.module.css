@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-body {
+.homepage-netflix-clone {
     position: relative;
     background-color: #000;
     font-family: 'Martel Sans', sans-serif;
     font-size: 16px;
+    min-height: 100vh;
 }
 
 a {
@@ -16,8 +17,8 @@ a {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: flex-start;
+    padding: 10px;
 }
 
 .style-background {
@@ -31,7 +32,10 @@ a {
     font-size: 34px;
 }
 
-.btn-nx-clone {
+.btn-signin {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     background-color: #e50914;
     color: #fff;
     line-height: normal;
@@ -39,6 +43,8 @@ a {
     font-weight: 400;
     font-size: 1rem;
     border-radius: 3px;
+    border-style: none;
+    height: 34px;
 }
 
 .hero-container {
@@ -48,24 +54,15 @@ a {
     align-items: center;
     margin-top: 1rem;
     padding: 75px 0;
+    border-bottom: 8px solid #222;
 }
 
 .subtitle {
-    display: flex;
     text-align: center;
-    justify-content: center;
+    align-items: center;
     color: #fff;
     width: 640px;
     margin: 1rem auto;
-}
-
-.subtitle-h1 {
-    font-weight: bold;
-}
-
-.subtitle-email-text {
-    align-items: center;
-    justify-content: center;
 }
 
 .subtitle a {
@@ -73,26 +70,25 @@ a {
     margin-left: 4px;
 }
 
-h3 {
+h3.subtitle-email-text {
     font-size: 18px;
+    width: 640px;
+    text-align: center;
 }
 
-form .align-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+form {
+    display: inline-block;
 }
 
-.sub-hero-container {
+.align-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .style-email-input {
+    padding-left: 5px;
     height: 60px;
     width: 500px;
-    padding-left: 5px;
 }
 
 .style-email-input:focus {
@@ -100,8 +96,9 @@ form .align-form {
 }
 
 .placeholder-label {
-    position: relative;
-    left: -30.8rem;
+    position: absolute;
+    margin-left: -38.5rem;
+    margin-top: 1em;
     transition: font .1s ease, top .1s ease, transform .1s ease, -webkit-transform .1s ease, -moz-transform .1s ease, -o-transform .1s ease;
     background-color: transparent;
     pointer-events: none;
@@ -110,7 +107,8 @@ form .align-form {
 
 .style-email-input:focus~.placeholder-label,
 .style-email-input:not(:placeholder-shown).style-email-input:not(:focus)~.placeholder-label {
-    top: -1rem;
+    margin-top: 0.5px;
+    font-size: 14px;
 }
 
 .style-submit {

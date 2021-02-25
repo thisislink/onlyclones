@@ -1,0 +1,63 @@
+.indeed-clone {
+    background-color: #fff;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline #164081;
+}
+
+.styleNav ul,
+.styleLinks ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.styleNav li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.styleNav a {
+    color: #000;
+}
+
+.styleNav ul li:hover,
+.styleNav ul li:hover a {
+    color: #b3b3b3;
+}
+
+.styleLinks {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.styleLinks li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px 24px;
+}
+
+.styleTopNavRight {
+    margin-left: auto;
+}
+
+.styleTopNavRight li {
+    margin: 0px 24px;
+}
+
+.styleSignin {
+    color: #2557A7;
+    font-weight: 700;
+}

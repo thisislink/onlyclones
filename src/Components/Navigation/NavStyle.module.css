@@ -1,0 +1,30 @@
+body {
+    background-color: #fff;
+}
+
+.header-title {
+    color: #e50914;
+    line-height: normal;
+    font-size: 34px;
+}
+
+.style-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.style-links li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.style-links a {
+    color: #fff;
+}
+
+.style-links ul li:hover,
+.style-links ul li:hover a {
+    color: #b3b3b3;
+}
