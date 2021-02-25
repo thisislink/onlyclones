@@ -1,5 +1,5 @@
 # Only Clones
-This project was created to improve and showcase my frontend skills through cloning websites. All sites can be viewed at [onlyclones.com](https://onlyclones.com).
+This project was created to improve and showcase my frontend skills through re-creating websites. All sites can be viewed at [onlyclones.com](https://onlyclones.com).
 
 ## Getting Started with Create React App
 
